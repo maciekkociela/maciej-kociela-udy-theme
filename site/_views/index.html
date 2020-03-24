@@ -48,6 +48,17 @@
       </div>
     </div>
   </div>
+  <div>
+    <div class="w-dyn-list">
+      <div class="w-dyn-items">
+        {%- assign collection = collections.blogs -%}{%- for item in collection -%}<div class="w-dyn-item">
+          <h2>{{ item.data.title }}</h2>
+          <h5>{{ item.data.position }}</h5>
+        </div>{%- endfor -%}
+      </div>
+      
+    </div>
+  </div>
   <div class="section">
     <div class="container">
       <h2>Contact</h2>
